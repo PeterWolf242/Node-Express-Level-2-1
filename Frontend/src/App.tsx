@@ -40,9 +40,11 @@ function App() {
 
 	return (
 		<>
+			<h1>Persons</h1>
 			{person.map((person) => (
 				<p>{person.name}</p>
 			))}
+			<h1>SHIPS</h1>
 			{ship.map((ship) => (
 				<h2>{ship.name}</h2>
 			))}
