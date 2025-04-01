@@ -12,9 +12,7 @@ interface IStarship {
 	name: string;
 }
 
-
 function App() {
-
 	const [person, SetPerson] = useState<IPerson[]>([]);
 	const [ship, SetShip] = useState<IStarship[]>([]);
 
@@ -36,8 +34,6 @@ function App() {
 		fetchData();
 	}, [])
 
-
-
 	return (
 		<>
 			<h1>Persons</h1>
@@ -46,7 +42,7 @@ function App() {
 			))}
 			<h1>SHIPS</h1>
 			{ship.map((ship) => (
-				<h2>{ship.name}</h2>
+				<p>{ship.name}</p>
 			))}
 		</>
 	)
